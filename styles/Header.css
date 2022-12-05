@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Header {
+  /* width: 1140px; */
+  height: 500px;
+  color: #fff;
+  font-size: 1.25rem;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url("https://images.unsplash.com/photo-1623479322729-28b25c16b011?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.Header .logo {
+  font-size: 2.25rem;
+}
+
+.aboutme {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutme .aboutme-text {
+  font-size: 1.25rem;
+  width: 570px;
+  height: 200px;
+  text-align: center;
+}
+
+.menu-options {
+  /* has border-buttom but not show */
+  border-bottom: 2px solid #000;
+}
+.menu-options:hover {
+  border-bottom: 2px solid #fb2576;
+}
+
+.hamberger {
+  display: none;
+}
+
+@media screen and (max-width: 952px) {
+  .Header {
+    height: 400px;
+  }
+  .Header .logo {
+    font-size: 1.5rem;
+  }
+  .menu-options {
+    font-size: 1rem;
+  }
+  .aboutme h1 {
+    font-size: 1.25rem;
+  }
+  .aboutme .aboutme-text {
+    font-size: 1rem;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 858px) {
+  .Header .logo {
+    font-size: 1.25rem;
+  }
+  .menu-options {
+    font-size: 0.75rem;
+  }
+}
